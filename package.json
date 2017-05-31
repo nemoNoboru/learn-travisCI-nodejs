@@ -1,0 +1,26 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "a linked list implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel-core/register",
+    "watch": "mocha --watch --require babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemoNoboru/learn-travisCI-nodejs.git"
+  },
+  "author": "iago&felipe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nemoNoboru/learn-travisCI-nodejs/issues"
+  },
+  "homepage": "https://github.com/nemoNoboru/learn-travisCI-nodejs#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "mocha": "^3.4.2",
+    "should": "^11.2.1"
+  }
+}
