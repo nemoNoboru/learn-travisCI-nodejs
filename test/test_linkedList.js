@@ -24,7 +24,7 @@ describe('LinkedList', () => {
 		it('should get things', () => {
 			linkedList.add("1")
 			var l = linkedList.get(0)
-			"1".should.be.equal("1")
+			"1".should.be.equal(l)
 		})
 
 		it('should get empty', () => {
