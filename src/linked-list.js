@@ -13,19 +13,17 @@ export default class LinkedList {
 	_search_element(i) {
 		var t = 0
 		var actual = this.first
-		if (i == 0) {
-			return actual
-		}
-		while (this.first.next && t < i) {
+		while (actual != this.last && t < i) {
 			actual = actual.next
+			t++
 		}
 		return actual
 	}
 
 	add(payload) {
 		if (this.is_empty()) {
-			this.first = new Nodo(payload)
-			this.last = this.first
+			this.first.next = new Nodo(payload)
+			this.last = this.first.next
 		} else {
 			this.last.next = new Nodo(payload)
 			this.last = this.last.next

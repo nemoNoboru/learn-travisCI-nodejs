@@ -5,7 +5,7 @@ var linkedList = null
 
 describe('LinkedList', () => {
 
-	beforeEach(function() {
+	beforeEach(function () {
 		linkedList = new LinkedList();
 	});
 
@@ -23,8 +23,14 @@ describe('LinkedList', () => {
 	describe('#get()', () => {
 		it('should get things', () => {
 			linkedList.add("1")
+			linkedList.add("2")
+			linkedList.add("3")
 			var l = linkedList.get(0)
 			"1".should.be.equal(l)
+			l = linkedList.get(1)
+			"2".should.be.equal(l)
+			l = linkedList.get(2)
+			"3".should.be.equal(l)
 		})
 
 		it('should get empty', () => {
