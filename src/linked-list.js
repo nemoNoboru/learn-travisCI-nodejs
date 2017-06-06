@@ -43,4 +43,14 @@ export default class LinkedList {
 		}
 		previous_to_remove.next = to_remove
 	}
+
+	map(f) {
+		var tmp = []
+		var actual = this.first
+		while (actual != null) {
+			tmp.push(f(actual.payload))
+			actual = actual.next
+		}
+		return tmp
+	}
 }

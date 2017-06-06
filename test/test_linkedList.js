@@ -50,4 +50,17 @@ describe('LinkedList', () => {
 			linkedList.remove(9)
 		})
 	})
+
+	describe('#map()', () => {
+		it('should do a map', () => {
+			var solution = [2, 4, 6, 8]
+			linkedList.add(1)
+			linkedList.add(2)
+			linkedList.add(3)
+			linkedList.add(4)
+
+			var l = linkedList.map((x) => { return x * 2})
+			solution.should.match(l)
+		})
+	})
 })
