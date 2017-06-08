@@ -46,7 +46,7 @@ export default class LinkedList {
 
 	map(f) {
 		var tmp = []
-		var actual = this.first
+		var actual = this.first.next
 		while (actual != null) {
 			tmp.push(f(actual.payload))
 			actual = actual.next
